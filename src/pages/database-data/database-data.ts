@@ -24,7 +24,7 @@ index: Number;
   ionViewDidLoad() {
     console.log('ionViewDidLoad DatabaseDataPage');
 
-    this.http.get('http://10.207.7.31:3000/tasks', {}, {}) //thuis 192.168.0.247 Kot: 192.168.0.113
+    this.http.get('http://192.168.100.52:3000/tasks', {}, {}) //thuis 192.168.0.247 Kot: 192.168.0.113
     .then(data => {
     console.log(data.data);
     this.items = JSON.parse(data.data);
